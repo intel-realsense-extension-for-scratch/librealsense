@@ -10,7 +10,7 @@
 rs_context::rs_context()
 {
     context = rsimpl::uvc::create_context();
-
+shalom
     for(auto device : query_devices(context))
     {
         LOG_INFO("UVC device detected with VID = 0x" << std::hex << get_vendor_id(*device) << " PID = 0x" << get_product_id(*device));
